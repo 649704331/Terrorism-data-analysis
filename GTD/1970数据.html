@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/gtd.css">
+    <title>基于恐怖主义事件的骨干网络抽取技术研究</title>
+    <script type="text/javascript">
+function showPic(num){
+	if(num!=""){
+		for(var i=1;i<9;i++){
+			if(num==i){
+				document.getElementById("pic"+i).style.display="block";
+			}else{
+			  	document.getElementById("pic"+i).style.display="none";
+			}
+		}
+	}else{
+		for(var i=1;i<9;i++){
+			  	document.getElementById("pic"+i).style.display="none";
+		}
+	}
+}
+</script>
+</head>
+<body>
+<header id="header">
+    <nav>
+      <a href="download/马兰GTD_ALL.xlsx" download="download/马兰GTD_ALL.xlsx"><img src="img/GTD.png" align="center" ></a>
+      <ul>
+              <li><a href="index.html">主页</a></li>
+              <li><a href="数据.html">数据</a></li>
+              <li class="drop-down"><a href="#">网络</a>
+                <ul class="drop-down-content">
+                    <li><a href="1970数据.html" class="active">1970数据</a></li>
+                    <li><a href="1998数据.html">1998数据</a></li>
+                </ul>
+              </li>
+              <li><a href="登录.html">登录</a></li>
+          </ul>
+        <!-- LOGO -->
+    </nav>
+</header>
+
+
+<section class="wang">
+    <div style="height:60px;"></div>
+    <div class="content">
+        <form action="" method="post" name="myform">
+            <table  align="center">
+                <tr>
+                    <td  height="70" align="center"><h3>恐怖主义组织骨干网络</h3></td>
+                </tr>
+                <tr>
+                    <td height="44" align="center">
+                        <select name="artType" onChange="showPic(this.value)">
+                            <option value="0">--请选择--</option>
+                            <option value="1">北美</option>
+                            <option value="2">中美洲</option>
+                            <option value="3">南美</option>
+                            <option value="4">东南亚</option>
+                            <option value="5">南亚</option>
+                            <option value="6">西欧</option>
+                            <option value="7">中东、北非</option>
+                            <option value="8">撒哈拉以南的非洲</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                <td align="center" >
+                    <DIV id="pic1" style="display:none">
+                        <div style="height:60px;"></div>
+                        <h1>1970-1997年北美地区骨干网络</h1>
+                        <p>该部分内容重点为观众呈现1970-1997年间，以区域为范围恐怖主义骨干网络，
+                            其中包含未进行非重要边过滤、进行非重要边过滤、骨干网提取三个阶段的网络图。</p>
+                        <p>下图为未进行非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域1余弦.png">
+                        <p>下图为非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域1过滤.png">
+                        <p>下图为该地区骨干网络</p>
+                        <IMG src="img/1970区域1骨干网络.png">
+                        <p>从骨干网络中可以很清晰的观察出处于核心地位的组织几个组织，
+                            分别是：121，275，276.</p>
+                        <p>根据数据页面的组织对照表可以得到该几个组织的名称分别是：</p>
+                            <p>[Jewish Defense League (JDL)]，[Vigilante Group]，[Weather Underground, Weathermen]。
+                        </p>
+                        <div style="height:60px;"></div>
+                    </DIV>
+                    <DIV id="pic2" style="display:none">
+                        <div style="height:60px;"></div>
+                        <h1>1970-1997年中美洲地区骨干网络</h1>
+                        <p>该部分内容重点为观众呈现1970-1997年间，以区域为范围恐怖主义骨干网络，
+                            其中包含未进行非重要边过滤、进行非重要边过滤、骨干网提取三个阶段的网络图。</p>
+                        <p>下图为未进行非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域2余弦.png">
+                        <p>下图为非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域2过滤.png">
+                        <p>下图为该地区骨干网络</p>
+                        <IMG src="img/1970区域2骨干网络.png">
+                        <p>从骨干网络中可以很清晰的观察出处于核心地位的组织几个组织，
+                            分别是：23，83，96，195。<p></p>根据数据页面的组织对照表可以得到
+                            该几个组织的名称分别是：<p></p>[April 6th Liberation Movement]，[Extremists]，
+                            [Guatemalan National Revolutionary Unity (URNG)],[Peasant Self-Defense Group (ACCU)]。
+                        </p>
+                        <div style="height:60px;"></div>
+                    </DIV>
+
+                    <DIV id="pic3" style="display:none">
+                        <div style="height:60px;"></div>
+                        <h1>1970-1997年南美地区骨干网络</h1>
+                        <p>该部分内容重点为观众呈现1970-1997年间，以区域为范围恐怖主义骨干网络，
+                            其中包含未进行非重要边过滤、进行非重要边过滤、骨干网提取三个阶段的网络图。</p>
+                        <p>下图为未进行非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域3余弦.png">
+                        <p>下图为非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域3过滤.png">
+                        <p>下图为该地区骨干网络</p>
+                        <IMG src="img/1970区域3骨干网络.png">
+                        <p>从骨干网络中可以很清晰的观察出处于核心地位的组织几个组织，
+                            分别是：172，239。</p><p>根据数据页面的组织对照表可以得到
+                            该几个组织的名称分别是：</p>
+                            <p>[National Front for the Liberation of Cuba (FLNC)]，[Shia Muslim extremists] 。
+                        </p>
+                        <div style="height:60px;"></div>
+                    </DIV>
+                    <DIV id="pic4" style="display:none">
+                        <div style="height:60px;"></div>
+                        <h1>1970-1997年东南亚地区骨干网络</h1>
+                        <p>该部分内容重点为观众呈现1970-1997年间，以区域为范围恐怖主义骨干网络，
+                            其中包含未进行非重要边过滤、进行非重要边过滤、骨干网提取三个阶段的网络图。</p>
+                        <p>下图为未进行非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域5余弦.png">
+                        <p>下图为非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域5过滤.png">
+                        <p>下图为该地区骨干网络</p>
+                        <IMG src="img/1970区域5骨干网络.png">
+                        <p>从骨干网络中可以很清晰的观察出处于核心地位的组织几个组织，
+                            分别是：154，178。</p><p>根据数据页面的组织对照表可以得到
+                            该几个组织的名称分别是：</p><p>[Moro Islamic Liberation Front (MILF)]，[Neo-Nazi extremists] 。
+                        </p>
+                        <div style="height:60px;"></div>
+                    </DIV>
+                    <DIV id="pic5" style="display:none">
+                        <div style="height:60px;"></div>
+                        <h1>1970-1997年南亚地区骨干网络</h1>
+                        <p>该部分内容重点为观众呈现1970-1997年间，以区域为范围恐怖主义骨干网络，
+                            其中包含未进行非重要边过滤、进行非重要边过滤、骨干网提取三个阶段的网络图。</p>
+                        <p>下图为未进行非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域6余弦.png">
+                        <p>下图为非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域6过滤.png">
+                        <p>下图为该地区骨干网络</p>
+                        <IMG src="img/1970区域6骨干网络.png">
+                        <p>从骨干网络中可以很清晰的观察出处于核心地位的组织几个组织，
+                            分别是：14，24，140，163，196。</p><p>根据数据页面的组织对照表可以得到
+                            该几个组织的名称分别是：</p><p>[Amal]，[Arab Separatists]，[Lesotho Liberation Army (LLA)],
+                            [Muslim Fundamentalists],[People's Liberation Forces (FPL)]。
+                        </p>
+                        <div style="height:60px;"></div>
+                    </DIV>
+                    <DIV id="pic6" style="display:none">
+                        <div style="height:60px;"></div>
+                        <h1>1970-1997年西欧地区骨干网络</h1>
+                        <p>该部分内容重点为观众呈现1970-1997年间，以区域为范围恐怖主义骨干网络，
+                            其中包含未进行非重要边过滤、进行非重要边过滤、骨干网提取三个阶段的网络图。</p>
+                        <p>下图为未进行非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域8余弦.png">
+                        <p>下图为非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域8过滤.png">
+                        <p>下图为该地区骨干网络</p>
+                        <IMG src="img/1970区域8骨干网络.png">
+                        <p>从骨干网络中可以很清晰的观察出处于核心地位的组织几个组织，
+                            分别是：63，86，112。</p><p>根据数据页面的组织对照表可以得到
+                            该几个组织的名称分别是：</p><p>[Coordination of the United Revolutionary Organization (CORU)]，
+                            [Fighting Proletarian Squads]，[Irish People's Liberation Organization (IPLO)]。
+                        </p>
+                        <div style="height:60px;"></div>
+                    </DIV>
+                    <DIV id="pic7" style="display:none">
+                        <div style="height:60px;"></div>
+
+                        <h1>1970-1997年中东、北非地区骨干网络</h1>
+
+                        <p>该部分内容重点为观众呈现1970-1997年间，以区域为范围恐怖主义骨干网络，
+                            其中包含未进行非重要边过滤、进行非重要边过滤、骨干网提取三个阶段的网络图。</p>
+                        <p>下图为未进行非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域10余弦.png">
+                        <p>下图为非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域10过滤.png">
+                        <p>下图为该地区骨干网络</p>
+                        <IMG src="img/1970区域10骨干网络.png">
+                        <p>从骨干网络中可以很清晰的观察出处于核心地位的组织几个组织，
+                            分别是：101，115，190。</p><p>根据数据页面的组织对照表可以得到
+                            该几个组织的名称分别是：</p><p>[Hamas (Islamic Resistance Movement)]，
+                            [Islamic Salvation Front (FIS)]，[Palestinian Islamic Jihad (PIJ)]。
+                        </p>
+                        <div style="height:60px;"></div>
+                    </DIV>
+                    <DIV id="pic8" style="display:none">
+                        <div style="height:60px;"></div>
+                        <h1>1970-1997年撒哈拉以南的非洲地区骨干网络</h1>
+                        <p>该部分内容重点为观众呈现1970-1997年间，以区域为范围恐怖主义骨干网络，
+                            其中包含未进行非重要边过滤、进行非重要边过滤、骨干网提取三个阶段的网络图。</p>
+                        <p>下图为未进行非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域11余弦.png">
+                        <p>下图为非重要边过滤的相似度网络</p>
+                        <IMG src="img/1970区域11过滤.png">
+                        <p>下图为该地区骨干网络</p>
+                        <IMG src="img/1970区域11骨干网络.png">
+                        <p>从骨干网络中可以很清晰的观察出处于核心地位的组织几个组织，
+                            分别是：103,175，223，229。</p><p>根据数据页面的组织对照表可以得到
+                            该几个组织的名称分别是：</p><p>[Hizbul Mujahideen (HM)]，
+                            [National Socialist Council of Nagaland]，[Revolutionary People's Struggle (ELA)]
+                            ,[Rodrigo Franco Command]。
+                        </p>
+                        <div style="height:60px;"></div>
+                    </DIV>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/gtd.css">
+	<title>登录 - GTD</title>
+</head>
+<body>
+<header id="header">
+      <nav>
+
+          <a href="download/马兰GTD_ALL.xlsx" download="download/马兰GTD_ALL.xlsx"><img src="img/GTD.png" align="center"></a>
+          <ul>
+              <li><a href="index.html">主页</a></li>
+              <li><a href="数据.html">数据</a></li>
+              <li class="drop-down"><a href="#">网络</a>
+                <ul class="drop-down-content">
+                    <li><a href="1970数据.html">1970数据</a></li>
+                    <li><a href="1998数据.html">1998数据</a></li>
+                </ul>
+              </li>
+              <li><a href="登录.html"  class="active">登录</a></li>
+          </ul>
+          <!-- LOGO -->
+
+      </nav>
+  </header>
+
+<section class="login">
+	<div style="height:160px;"></div>
+	<div class="login-content">
+		<form action="">
+			<h1>登录</h1>
+			<label for="username" >用户</label>
+			<input type="text" name="username" id="username" class="block" required>
+			<label for="pwd">密码</label>
+			<input type="password" name="pwd" id="pwd" class="block" required>
+			<button type="submit" class="btn-blue" id="btn-login">登录</button>
+			<button class="btn-green" type="button" id="btnReg">注册</button>
+		</form>
+		<div style="height:40px;"></div>
+	</div>
+</section>
+
+<script>
+	btnReg.onclick=function(){
+		alert("正在跳转！");
+		window.location.href="注册.html";
+	}
+</script>
+<section class="index-bg2">
+	<p>互联网违法和不良信息举报电话：0571-28090163</p>          <p>解经纬     倾情呈现</p>
+</section>
+
+</body>
+</html>
